@@ -33,7 +33,6 @@ export default {
       return this.$store.state.cart
     }
   },
-  name: 'cart',
   methods: {
     calculateSubTotal () {
       /* eslint-disable */
@@ -54,7 +53,8 @@ export default {
     removeProductToCart (prod) {
       this.$store.commit('removeItem', prod)
     }
-  }
+  },
+  name: 'cart'
 }
 </script>
 

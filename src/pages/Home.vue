@@ -2,6 +2,7 @@
   <div class="home">
     <products></products>
     <cart></cart>
+    <p>Developement By <a href="https://github.com/ViniciusAugusto" target="_blank">VinciiusAugusto</a></p>
   </div>
 </template>
 
@@ -26,6 +27,17 @@ export default {
 .cart {
   float: left;
   width: 20%;
+}
+p {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 2vh;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .products {

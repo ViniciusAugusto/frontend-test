@@ -19,12 +19,15 @@ export default {
   --thirdColor: #CCC;
 }
 
-body {
-  margin: 0;
+html, body {
+  height: 100%;
 }
 
 #app {
   font-family: 'Open Sans', Arial, sans-serif;
   color: var(--primaryColor);
+  min-height: 100%;
+  position: relative;
 }
+
 </style>

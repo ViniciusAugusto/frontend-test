@@ -23,6 +23,11 @@
 
 <script>
 export default {
+  computed: {
+    products () {
+      return this.$store.state.products
+    }
+  },
   data () {
     return {
       currentOrder: 'name',
@@ -33,7 +38,6 @@ export default {
       }
     }
   },
-  name: 'products',
   methods: {
     getImageProduct (image) {
       return require('../assets/img/' + image)
@@ -66,11 +70,7 @@ export default {
       return ordered
     }
   },
-  computed: {
-    products () {
-      return this.$store.state.products
-    }
-  }
+  name: 'products'
 }
 </script>
 
@@ -94,7 +94,7 @@ export default {
   -moz-appearance:none; /* Firefox */
   -webkit-appearance:none; /* Safari and Chrome */
   background: url(../assets/img/arrow-down.svg) no-repeat right #FFF;
-  background-position-x: 28vw;
+  background-position-x: 28vw
 }
 
 .products .itens {
@@ -102,7 +102,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 10vh;
+  margin-top: 10vh
 }
 
 .products .item{
@@ -124,7 +124,7 @@ export default {
 
 .products .item .details .price{
   color: var(--secondColor);
-  font-weight: bold;
+  font-weight: bold
 }
 
 .products .item .addCart {
@@ -135,26 +135,26 @@ export default {
   display: none;
   font-size: 1em;
   padding: 20px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .products .item:hover .addCart {
-  display: inline-block;
+  display: inline-block
 }
 .products .item:hover .details {
-  display: none;
+  display: none
 }
 
 
 @media (min-width: 320px) and (max-width: 1024px) {
   .products .item{
-   flex: 1 1 100%;
+   flex: 1 1 100%
   }
   .products .item .addCart {
-    display: inline-block;
+    display: inline-block
   }
   .products .item{
-    margin-bottom: 50px;
+    margin-bottom: 50px
   }
 }
 </style>
