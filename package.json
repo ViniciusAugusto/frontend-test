@@ -4,15 +4,18 @@
   "description": "A Vue.js project",
   "author": "ViniciusAugusto <viniciusaugustocunha@gmail.com>",
   "private": true,
+  "homepage": "https://viniciusaugusto.github.io/frontend-test",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "axios": "^0.17.1",
     "vue": "^2.5.2",
+    "vue-gh-pages": "^1.6.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
