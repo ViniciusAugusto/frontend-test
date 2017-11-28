@@ -149,7 +149,7 @@ export default {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .products .item{
    flex: 1 1 100%;
   }

@@ -1,6 +1,6 @@
-# consulta-remedios-frontend-test
+# frontend-test
 
-> A Vue.js project
+> Developement project test with VueJS
 
 ## Build Setup
 
