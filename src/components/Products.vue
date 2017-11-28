@@ -12,7 +12,7 @@
           <img :src="getImageProduct(product.image)" :alt="product.name">
         </picture>
         <section class="details">
-          {{ insertSpaces(product.name) }} <br>
+          {{ product.name }} <br>
           <span class="price">R$ {{formatNumber(product.price)}}</span>
         </section>
         <button class="addCart" @click="addProductToCart(product)">adicionar no carrinho</button>
@@ -64,9 +64,6 @@ export default {
           break
       }
       return ordered
-    },
-    insertSpaces (string) {
-      return string.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/([A-Z])([A-Z][a-z])/g, '$1 $2')
     }
   },
   computed: {

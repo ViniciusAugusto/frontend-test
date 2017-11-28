@@ -7,7 +7,7 @@
           <img :src="getImageProduct(product.image)" :alt="product.name">
         </picture>
         <section class="details">
-          <p>{{ insertSpaces(product.name) }}</p>
+          <p>{{ product.name }}</p>
           R$ {{formatNumber(product.price)}}
         </section>
         <button @click="removeProductToCart(product)">X</button>
@@ -53,9 +53,6 @@ export default {
     },
     removeProductToCart (prod) {
       this.$store.commit('removeItem', prod)
-    },
-    insertSpaces (string) {
-      return string.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/([A-Z])([A-Z][a-z])/g, '$1 $2')
     }
   }
 }
