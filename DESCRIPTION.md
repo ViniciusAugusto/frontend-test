@@ -1,4 +1,4 @@
-## Consulta Remedios Frontend Test
+## Frontend Test
 
 O teste consiste em construir a interface de um pseudo ecommerce de games,
 conforme as telas a seguir.
