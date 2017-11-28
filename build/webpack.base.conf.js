@@ -71,15 +71,6 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
-      {
-        test: /\.(png|jpe?g|gif)(\?.*)?$/,
-        loader: 'url-loader',
-        options: {
-          limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]'),
-          publicPath: process.env.NODE_ENV === 'production' ? './' : '/'
-       }
       }
     ]
   }
